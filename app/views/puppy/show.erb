@@ -1,0 +1,15 @@
+<p><b>Puppy!</b></p>
+
+
+<p>Name: <%= @puppy[:name] %> </p>
+
+<p>Breed: <%= @puppy[:breed] %> </p>
+
+<p><a href="/puppy/<%= @id %>/edit">Edit this puppy</a></p>
+
+<p><form method="post" action="/puppy/<%= @id.to_s %>">
+<input type="hidden" name="_method" value="delete">
+<input type="submit" value="Permanently delete this puppy">
+</form></p>
+
+<p><a href="/">Back to Puppy Index</a></p>

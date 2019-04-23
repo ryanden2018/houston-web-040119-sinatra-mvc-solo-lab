@@ -1,0 +1,11 @@
+<h2>All the Puppies</h2>
+
+<p><b><a href="/puppy/new">Create a New Puppy</a></b></p>
+
+<ul>
+<% @all_puppies.each do |id,puppy| %>
+
+  <li><a href="/puppy/<%= id.to_s %>"><%= puppy[:name] %></a></li>
+
+<% end %>
+</ul>

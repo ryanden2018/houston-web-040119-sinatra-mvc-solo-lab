@@ -1,0 +1,10 @@
+<p><b>Edit this puppy</b></p>
+
+<form action="/puppy/<%= @id.to_s %>" method="POST">
+
+<input type="hidden" name="_method" value="PATCH">
+<p>Name: <input type="text" name="name" value="<%= @puppy[:name] %>"></p>
+<p>Breed: <input type="text" name="breed" value="<%= @puppy[:breed] %>"></p>
+<p><input type="submit" value="Submit changes"></p>
+
+</form>
